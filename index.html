@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Janmashtami</title>
+
+		<link type="text/css" rel="stylesheet" href="demo.css" />
+		<link type="text/css" rel="stylesheet" href="src/css/jquery.mmenu.css" />
+		
+		<!-- for the one page -->
+		<style type="text/css">
+			#intro,
+			#first,
+			#second,
+			#third,
+			#fourth,
+			#fifth,
+			#sixth,
+			#seventh,
+			#eighth,
+			#ninth,
+			#tenth,
+			#eleventh,
+			#twelfth,
+			#thirteen,
+			#fourteen,
+			#fifteen,
+			#sixteen,
+			#seventeen,
+			#eighteen,
+			#nineteen,
+			#twenty,
+			#tone,
+			#ttwo,
+			#tthree,
+			#tfour,
+			#tfive,
+			#tsix,
+			#tseven,
+			#tseven,
+			#teight,
+			#tnine,
+			#thirty
+			{
+				height: 400px;
+			}
+			#intro
+			{
+				padding-top: 0;
+			}
+			#first,
+			#second,
+			#third,
+			#fourth,
+			#fifth,
+			#sixth,
+			#seventh,
+			#eighth,
+			#ninth,
+			#tenth,
+			#eleventh,
+			#twelfth,
+			#thirteen,
+			#fourteen,
+			#fifteen,
+			#sixteen,
+			#seventeen,
+			#eighteen,
+			#nineteen,
+			#twenty,
+			#tone,
+			#ttwo,
+			#tthree,
+			#tfour,
+			#tfive,
+			#tsix,
+			#tseven,
+			#tseven,
+			#teight,
+			#tnine,
+			#thirty
+			{
+				border-top: 1px solid #ccc;
+				padding-top: 150px;
+			}
+		</style>
+		
+		<!-- for the fixed header -->
+		<style type="text/css">
+			.header,
+			.footer
+			{
+				position: fixed;
+				width: 100%;
+
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				-o-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.footer
+			{
+				bottom: 0;
+			}
+		</style>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="src/js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $menu = $('nav#menu'),
+					$html = $('html, body');
+
+				$menu.mmenu();
+				$menu.find( 'li > a' ).on(
+					'click',
+					function()
+					{
+						var href = $(this).attr( 'href' );
+
+						//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+						if ( href.slice( 0, 1 ) == '#' )
+						{
+							$menu.one(
+								'closed.mm',
+								function()
+								{
+									setTimeout(
+										function()
+										{
+											$html.animate({
+												scrollTop: $( href ).offset().top
+											});	
+										}, 10
+									);	
+								}
+							);						
+						}
+					}
+				);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header mm-fixed-top">
+				<a href="#menu"></a>
+				Janmashtami
+			</div>
+			<div class="content" id="content">
+				<div id="intro">
+					<img src="img.png">
+					<p><strong>Happy Janmashtami</strong><br />
+						This app contains lots of messages  for you to share on Whatsapp, Facebook etc. Simply copy the text by long pressing on it and share.</p>
+					
+					
+				</div>
+				<div id="first">
+					<p><strong>Knahhaiya hamare dulare,</strong><br />
+Wahi sabse pyare,<br />
+Makhan ke liye jhagad jaye,<br />
+Gopiya dekhkar akrshit ho jaye,<br />
+Lekin sabke rakhwale,<br />
+Tabhi to sabhi ke dulare<br />
+Happy Janmashtmi</strong><br />
+						
+
+				</div>
+				<div id="second">
+					<p><strong>
+						May you find your love </strong> <br />on this Janmashtmi and Gopis may shower all their love and affection on your body and soul!
+Happy Krishna Janmashtmi </p>
+				</div>
+				<div id="third">
+					<p><strong>May Lord Krishna steal </strong> <br />all your tensions and worries on this Janmashtmi! And give you all the love, peace and happiness!
+Happy Janmashtmi!<br /></p>
+						
+				</div>
+				<div id="fourth">
+					<p><strong>May the Natkhat </strong><br /> Nand Lal always give you happiness, health & prosperity; and may you find peace in Krishna consciousness!
+Happy Janmashtami</p><br /> 
+						
+				</div>
+				<div id="fifth">
+					<p><strong>Nand ke ghar Anand Hi Anand Bhayo,</strong><br />
+Jo Nand Ke Ghar Gopal Aayo,<br>
+Jai Ho Murli Dhar Gopal ki,<br />
+Jai Ho Kanhaiya Lal Ki"<br />
+Happy Janmashtami.<br />
+						
+				</div>
+				<div id="sixth">
+					<p><strong>
+						For this, is a special </strong> <br />time when familyAnd friends get together,for fun.Wishing laughter and fun to cheer your days,In this festive season of JANMASHTMI and always!!!!Happy JANMASHTMI </p><br />
+				</div>
+				<div id="seventh">
+					<p><strong>
+						Today is very precious </strong> <br />day Some one special was born Born to fight against inhumanity Born to save the trust in God Happy Janamashtami</p><br />
+				</div>
+				<div id="eighth">
+					<p><strong>
+						Krishna jisaka nam hai, </strong><br /> Gokul jisaka dham hai aise bhagvan ko ham sab ka pranam hai..
+HAPPY JANMASHTAMI</p><br />
+				</div>
+				<div id="ninth">
+					<p><strong>
+						May you find your love </strong> <br />on this Janmashtmi and Gopis may shower all their love and affection on your body and soul!
+Happy Krishna Janmashtmi </p>
+				</div>
+				<div id="tenth">
+					<p><strong>
+						krishan ki mahima,</strong><br />krishan ka pyar,krishan me shradha,krishan se sansar,mubarak ho apko janmasthami ka tyohar..SHRI KRISHAN ki kripa aap par sada bani rahe</p><br />
+				</div>
+				<div id="eleventh">
+					<p><strong>
+						Shri Krishna k kadam apke ghar aaye</strong> <br />
+Aap khushiyon k deep jalayye<br />
+Pareshani apse ankhe churaye<br />
+Krishna Janmotsav ki aapko subh kamnaye<br />
+Happy Janmashtmi</p><br />
+				</div>
+				<div id="twelfth">
+					<p><strong>
+						May Lord Krisna's flute invite </strong> <br />
+the melody of love into UR life<br />
+May Radha's love teach not only how to love<br />
+but to love eternally!!.. HAPPY JANMASHTAMI<br /> </p>
+				</div>
+				<div id="thirteen">
+					<p><strong>
+						Wo Mor Mukut, Wo Nad Lala,</strong><br/>
+Wo Murli Manohar, Wo Bansi wala,<br />
+Wo Makhan chor, Wo Braj Lala,<br />
+Janmashtami ki hardik badhayi..<br />
+JAI SHRI KRISHNA..</p><br />
+				</div>
+				<div id="fourteen">
+					<p><strong>
+						May Lord Krishna come </strong><br/> 2 your house and
+take away all ur Makhan,
+Mishri wid all ur worries and sorrows,
+His blessings on u and ur family.
+Happy Krishna Janmashtami.</p><br/>
+				</div>
+				<div id="fifteen">
+					<p><strong>
+						Murli Manohar, Brij ke Dhrohar.</strong> <br />
+Wo Nandlalla Gopala,<br />
+Bansi Ki Dhun Pr Sab k Dukh HarneWala.<br />
+Sab Milkar Machay Dhoom Ki Krishna Ana Wala Hai.<br />
+Happy Krishna Janmashtami..</p><br />
+				</div>
+				<div id="sixteen">
+					<p><strong>
+						Jb jb hove dharm ki hani,</strong><br />
+tb tb leve Avtar bhagwan,<br />
+kar deve mardan papiyei ka mukti,<br />
+deve hm prithvi vasiyon ko,<br />
+jai shri krishana,<br />
+Happy Janmashtami..</p><br/>
+				</div>
+				<div id="seventeen">
+					<p><strong>
+						Makhn churaiya sri Krishna kanhaiya ji,</strong><br />
+bansi bajaiya o to ras rachaiya hain,<br />
+kah kahun sakhi jiya chain parat nhi,<br />
+murlidhar sanwre ki aaj badhaiya hai.<br />
+Happy Janmashtami..</p><br />
+				</div>
+				<div id="eighteen">
+					<p><strong>
+						Radha ki bhakti, Murli ki mithas,</strong><br />
+makhan ka swaad aur gopiya ka raas<br />
+Inhi sabse milke banti hai janmasthami ka ye din khas. <br />
+Happy janmasthami..</p><br />
+
+				</div>
+				<div id="nineteen">
+					<p><strong>
+						Aao milkar sajaaye nandal ko, </strong><br />
+aao milkar karein gungaan unka,<br />
+jo sabko raah dikhaate hai aur sabki bigdi banate hain,<br />
+chalo dhoom dhaam se manaaye janmadin unka..<br />
+Janmashtami ki Subhkamnaayein..<br />
+				</div>
+				<div id="twenty">
+					<p><strong>
+						Shri Krishna Govind Hare Murari,</strong><br />
+Hey Nath Narayan Vasudeva,<br />
+Jai Ho Shri Krishna,<br />
+Happy Janmashtami..<br /> </p>
+				</div>
+				<div id="tone">
+					<p><strong>
+						Chandan ki Khushbu Resham ka Har, </strong><br />
+Sawan ki sugandh Barish ki fuhar,<br />
+Radha ki Ummeed KANHAIYA ka pyar,<br />
+Mubarak Ho apko Janmasthmi Ka Tyohaar.<br /></p>
+				</div>
+				<div id="ttwo">
+					<p><strong>
+						Dahi ki handi, Baris ka fuhar,</strong><br />
+Makhan churane aaye nandlal,<br  />
+Mubarak ho aapko janmastami ka tyohar.<br />
+Happy krishan janmastmi.</p><br />
+				</div>
+				<div id="tthree">
+					<p><strong>
+						If things are happeing </strong> <br /> according to ur wish,
+u r luky but if not ITS Happening
+according to krishnas wish..
+HARE kRiShna.. Happy janmashtami.. </p>
+				</div>
+				<div id="tfour">
+					<p><strong>
+						krishan ki mahima, krishan ka pyar,</strong><br />
+krishan me shradha, krishan se sansar,<br />
+mubarak ho apko janmasthami ka tyohar,<br />
+SHRI KRISHAN ki kripa aap par sada bani rahe..<br />
+Happy Janmashtmi..<br/> </p>
+				</div>
+				<div id="tfive">
+					<p><strong>
+						Shri Krishna k kadam apke ghar aaye,</strong><br />
+Aap khushiyon k deep jalayye,<br />
+Pareshani apse ankhe churaye,<br />
+Krishna Janmotsav ki aapko subh kamnaye.<br />
+Happy Janmashtmi..</p><br />
+				</div>
+				<div id="tsix">
+					<p><strong>
+						Dekho Phir Janmashtmi Aayi Hai,</strong><br />
+Makhan Ki handi ne phir mithas bhadhai hai,<br />
+Kanha Ki leela hai Sabse Pyari,<br />
+Wo de tumhe duniya bhar k khusiya sari.<br />
+Happy Janmasthmi to All..<br /> </p>
+				</div>
+				<div id="tseven">
+					<p><strong>
+						Makhan churakr jisne khaya,</strong><br />
+Bansi bajakr jisne nachaya,<br />
+Khushi manao uske janm ki,<br />
+Jisne duniya ko Prem shikhaya.<br />
+HAPPY JANMASATMI..</p><br />
+				</div>
+				<div id="teight">
+					<p><strong>
+					Gokul me ji kare niwas,</strong><br />
+Gopiyo sang jo rachye raas,<br />
+Devki-Yashda jinki maiya,<br />
+aisehamare kishan kanhaiya jai..<br />
+shree krishna Happy janmastami to all..	</p><br />
+				</div>
+				<div id="tnine">
+					<p><strong>
+						Krishna jiska naam, Gokul jiska dhaam,</strong><br />
+Aise shree Bhagwan ko, Ham sab kare pranam!
+Jai shree krishna.. Happy Janmastami to all..</p><br />
+				</div>
+				<div id="thirty">
+					<p><strong>
+						Maakhan khave,</strong><br /> Shor machave Gopiyon ke sang Raas rachave,
+Murli bajake Mann harshave hai Natkhat Nand Gopal...
+Wish U A very Happy Janmashtmi</p>
+				</div>
+			</div>
+
+			<div class="footer mm-fixed-bottom">
+				Fixed footer :-)
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#content">Introduction</a></li>
+					<li><a href="#first">Message 1</a></li>
+					<li><a href="#second">Message 2</a></li>
+					<li><a href="#third">Message 3</a></li>
+					<li><a href="#fourth">Message 4</a></li>
+					<li><a href="#fifth">Message 5</a></li>
+					<li><a href="#sixth">Message 6</a></li>
+					<li><a href="#seventh">Message 7</a></li>
+					<li><a href="#eighth">MMessage 9</a></li>
+					<li><a href="#ninth">Message 9</a></li>
+					<li><a href="#tenth">Message 10</a></li>
+					<li><a href="#eleventh">Message 11</a></li>
+					<li><a href="#twelfth">Message 12</a></li>
+					<li><a href="#thirteen">Message 13</a></li>
+					<li><a href="#fourteen">Message 14</a></li>
+					<li><a href="#fifteen">Message 15</a></li>
+					<li><a href="#sixteen">Message 16</a></li>
+					<li><a href="#seventeen">Message 17</a></li>
+					<li><a href="#eighteen">Message 18</a></li>
+					<li><a href="#nineteen">Message 19</a></li>
+					<li><a href="#twenty">Message 20</a></li>
+					<li><a href="#tone">Message 21</a></li>
+					<li><a href="#ttwo">Message 22</a></li>
+					<li><a href="#tthird">Message 23</a></li>
+					<li><a href="#tfour">Message 24</a></li>
+					<li><a href="#tfive">Message 25</a></li>
+					<li><a href="#tsix">Message 26</a></li>
+					<li><a href="#tseven">Message 27</a></li>
+					<li><a href="#teight">Message 28</a></li>
+					<li><a href="#tnine">Message 29</a></li>
+					<li><a href="#thirty">Message 30</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
